@@ -1,0 +1,1254 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>词汇</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="27006c4f-5a3d-8015-a73e-f398f21052f3" class="page sans"><header><h1
+					class="page-title">词汇</h1><p class="page-description"></p></header><div class="page-body"><table
+					class="collection-content"><thead><tr><th><span class="icon property-icon"><img
+										src="https://www.notion.so/icons/font_gray.svg"
+										style="width:14px;height:14px;display:block" /></span>词汇</th><th><span class="icon property-icon"><img
+										src="https://www.notion.so/icons/description_gray.svg"
+										style="width:14px;height:14px;display:block" /></span>音标</th><th><span class="icon property-icon"><img
+										src="https://www.notion.so/icons/description_gray.svg"
+										style="width:14px;height:14px;display:block" /></span>释义</th><th><span class="icon property-icon"><img
+										src="https://www.notion.so/icons/description_gray.svg"
+										style="width:14px;height:14px;display:block" /></span>变体</th><th><span class="icon property-icon"><img
+										src="https://www.notion.so/icons/description_gray.svg"
+										style="width:14px;height:14px;display:block" /></span>文本 2</th></tr></thead><tbody><tr
+							id="27c06c4f-5a3d-80aa-bea2-e5dee5011582"><td class="cell-title"><a
+									href="https://www.notion.so/accomplishment-27c06c4f5a3d80aabea2e5dee5011582?pvs=21">accomplishment</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 成就，成绩；技能，才艺；完成，实现</td><td class="cell-yb`Q">accomplish v.
+								完成，实现</td><td class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-806f-b23e-dd804433c0f0"><td
+								class="cell-title"><a href="https://www.notion.so/acid-28e06c4f5a3d806fb23edd804433c0f0?pvs=21">acid</a></td><td
+								class="cell-SpfY">/ˈæsɪd/</td><td class="cell-bc@N">n. 酸</td><td class="cell-yb`Q"></td><td class="cell-ltTS">⚠️
+								注意拼写</td></tr><tr id="28306c4f-5a3d-80a1-9885-c845f73e2848"><td class="cell-title"><a
+									href="https://www.notion.so/allergic-28306c4f5a3d80a19885c845f73e2848?pvs=21">allergic</a></td><td
+								class="cell-SpfY">/əˈlɜːdʒɪk/</td><td class="cell-bc@N">adj. 对……过敏的</td><td class="cell-yb`Q">allergy /ˈælədʒi/
+								n. 过敏反应，过敏症</td><td class="cell-ltTS">allergic to sth. 对某物过敏</td></tr><tr
+							id="27b06c4f-5a3d-80c7-8d11-d287a9a198f6"><td class="cell-title"><a
+									href="https://www.notion.so/amateur-27b06c4f5a3d80c78d11d287a9a198f6?pvs=21">amateur</a></td><td
+								class="cell-SpfY">/ˈæmətə(r)/</td><td class="cell-bc@N">n. 业余爱好者 adj. 非专业的，业余爱好的</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">amateur player 业余运动员<br />novice: n. 新手</td></tr><tr
+							id="27b06c4f-5a3d-80dc-9fa0-d20f6df6945c"><td class="cell-title"><a
+									href="https://www.notion.so/ambition-27b06c4f5a3d80dc9fa0d20f6df6945c?pvs=21">ambition</a></td><td
+								class="cell-SpfY">/æmˈbɪʃ(ə)n/</td><td class="cell-bc@N">n. 追求的目标，抱负；雄心，野心</td><td class="cell-yb`Q">ambitious
+								adj. 有抱负的，野心勃勃的</td><td class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-80af-8e8e-ecdba17d9e6c"><td
+								class="cell-title"><a
+									href="https://www.notion.so/amplify-27c06c4f5a3d80af8e8eecdba17d9e6c?pvs=21">amplify</a></td><td
+								class="cell-SpfY">/ˈæmplɪfaɪ/</td><td class="cell-bc@N">v. 放大，扩大（声音）；增强，加强</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">amplify the effect: 发挥作用</td></tr><tr id="28406c4f-5a3d-80a8-93ea-e8a356d73e35"><td
+								class="cell-title"><a
+									href="https://www.notion.so/anatomy-28406c4f5a3d80a893eae8a356d73e35?pvs=21">anatomy</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 解剖学</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27106c4f-5a3d-80e3-a443-f33a4f6840f0"><td class="cell-title"><a
+									href="https://www.notion.so/antique-27106c4f5a3d80e3a443f33a4f6840f0?pvs=21">antique</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">adj. 古老的 n. 古董</td><td class="cell-yb`Q">antiquity n. 古董</td><td
+								class="cell-ltTS"></td></tr><tr id="27506c4f-5a3d-80f5-8bd3-ea328c5a40bc"><td class="cell-title"><a
+									href="https://www.notion.so/appalled-27506c4f5a3d80f58bd3ea328c5a40bc?pvs=21">appalled</a></td><td
+								class="cell-SpfY">/əˈpɔːld/</td><td class="cell-bc@N">adj. 惊骇的；丧胆的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">Be appalled by…: 对…感到震惊</td></tr><tr id="28306c4f-5a3d-8041-bbf2-eafd24642afa"><td
+								class="cell-title"><a
+									href="https://www.notion.so/appointment-28306c4f5a3d8041bbf2eafd24642afa?pvs=21">appointment</a></td><td
+								class="cell-SpfY">/əˈpɔɪntmənt/</td><td class="cell-bc@N">n. 约会，约定；任命，委派；职务，职位</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">making appointments: 预约，安排会面或会议的行为</td></tr><tr
+							id="28306c4f-5a3d-802a-b0de-fd42513d67cb"><td class="cell-title"><a
+									href="https://www.notion.so/aptitude-28306c4f5a3d802ab0defd42513d67cb?pvs=21">aptitude</a></td><td
+								class="cell-SpfY">/ˈæptɪtjuːd/</td><td class="cell-bc@N">n. 天资，天赋；自然的倾向，习性</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">= talent, innate ability, gift, genius</td></tr><tr
+							id="27b06c4f-5a3d-80e8-8eb6-c5cbe4146914"><td class="cell-title"><a
+									href="https://www.notion.so/archeologist-27b06c4f5a3d80e88eb6c5cbe4146914?pvs=21">archeologist</a></td><td
+								class="cell-SpfY">/ˌɑːkiˈɒlədʒɪst/</td><td class="cell-bc@N">n. 考古学家</td><td class="cell-yb`Q">archeology n.
+								考古学</td><td class="cell-ltTS"></td></tr><tr id="27406c4f-5a3d-800f-bd0a-ec021a96853c"><td class="cell-title"><a
+									href="https://www.notion.so/atlas-27406c4f5a3d800fbd0aec021a96853c?pvs=21">atlas</a></td><td
+								class="cell-SpfY">/ˈætləs/</td><td class="cell-bc@N">n. 地图册</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">⚠️ 注意拼写<br />An atlas is a collection of maps</td></tr><tr
+							id="28506c4f-5a3d-80f3-9a90-f9033f4318e7"><td class="cell-title"><a
+									href="https://www.notion.so/authority-28506c4f5a3d80f39a90f9033f4318e7?pvs=21">authority</a></td><td
+								class="cell-SpfY">/ɔːˈθɒrəti/</td><td class="cell-bc@N">n. 专家，权威人士；行政管理机构；权利，权限</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">city authorities: 市政当局</td></tr><tr
+							id="28306c4f-5a3d-8041-ab7b-e7d5e342ae5e"><td class="cell-title"><a
+									href="https://www.notion.so/automobile-28306c4f5a3d8041ab7be7d5e342ae5e?pvs=21">automobile</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 汽车</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-8013-a548-ebf3036d4ab8"><td class="cell-title"><a
+									href="https://www.notion.so/bankrupt-27b06c4f5a3d8013a548ebf3036d4ab8?pvs=21">bankrupt</a></td><td
+								class="cell-SpfY">/ˈbæŋkrʌpt/</td><td class="cell-bc@N">adj. 破产的，倒闭的 n. 破产者</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-80d3-9231-c2a40c7e3b54"><td class="cell-title"><a
+									href="https://www.notion.so/Briton-27b06c4f5a3d80d39231c2a40c7e3b54?pvs=21">Briton</a></td><td
+								class="cell-SpfY">/ˈbrɪtn/</td><td class="cell-bc@N">n. 英国人；大不列颠人</td><td class="cell-yb`Q">Britain /ˈbrɪt(ə)n/
+								n. 英国；不列颠</td><td class="cell-ltTS">= the British; the English 英国人</td></tr><tr
+							id="27b06c4f-5a3d-806e-ad48-c5532d08d07d"><td class="cell-title"><a
+									href="https://www.notion.so/burial-27b06c4f5a3d806ead48c5532d08d07d?pvs=21">burial</a></td><td
+								class="cell-SpfY">/ˈberiəl/</td><td class="cell-bc@N">n. 埋葬，葬礼；葬地，坟墓</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">burial at sea 海葬</td></tr><tr id="27c06c4f-5a3d-80eb-928d-c41c8bf9daa7"><td
+								class="cell-title"><a
+									href="https://www.notion.so/canal-27c06c4f5a3d80eb928dc41c8bf9daa7?pvs=21">canal</a></td><td
+								class="cell-SpfY">/kəˈnæl/</td><td class="cell-bc@N">n. 运河，灌溉渠，水道；（体内的）管，道</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">birth canal 产道：指在分娩过程中，胎儿通过的母体生殖系统的通道</td></tr><tr
+							id="27506c4f-5a3d-80c4-bdc3-f9454cd7edbb"><td class="cell-title"><a
+									href="https://www.notion.so/captive-27506c4f5a3d80c4bdc3f9454cd7edbb?pvs=21">captive</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 俘虏，囚徒<br />adj. 被俘虏的，被圈养的</td><td class="cell-yb`Q">captivity n.
+								囚禁；被关</td><td class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-8098-9c68-d9093230ee4e"><td
+								class="cell-title"><a
+									href="https://www.notion.so/cement-28306c4f5a3d80989c68d9093230ee4e?pvs=21">cement</a></td><td
+								class="cell-SpfY">/sɪˈment/</td><td class="cell-bc@N">n. 水泥</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">concrete n. 混凝土</td></tr><tr id="28e06c4f-5a3d-8021-a227-f1bc0c88f82e"><td
+								class="cell-title"><a
+									href="https://www.notion.so/cereal-28e06c4f5a3d8021a227f1bc0c88f82e?pvs=21">cereal</a></td><td
+								class="cell-SpfY">/ˈsɪəriəl/</td><td class="cell-bc@N">n. 谷类食物，麦片</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-8020-9af5-d17a716162db"><td class="cell-title"><a
+									href="https://www.notion.so/certificate-27c06c4f5a3d80209af5d17a716162db?pvs=21">certificate</a></td><td
+								class="cell-SpfY">/səˈtɪfɪkət/</td><td class="cell-bc@N">n. 证明，证书；文凭，成绩合格证书</td><td class="cell-yb`Q">=
+								qualification n. （通过考试或学习课程取得的）资格，学历；（胜任某一工作或职位所需的）资历，技能条件</td><td class="cell-ltTS"></td></tr><tr
+							id="28306c4f-5a3d-80c5-946d-e76c7c8bdde8"><td class="cell-title"><a
+									href="https://www.notion.so/clumsy-28306c4f5a3d80c5946de76c7c8bdde8?pvs=21">clumsy</a></td><td
+								class="cell-SpfY">/ˈklʌmzi/</td><td class="cell-bc@N">adj. 笨拙的，不灵活的；不得体的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">= awkward: adj. 令人尴尬的；使人难堪的；笨拙的</td></tr><tr id="27506c4f-5a3d-8062-a76a-d64eaf2b33be"><td
+								class="cell-title"><a
+									href="https://www.notion.so/coincide-27506c4f5a3d8062a76ad64eaf2b33be?pvs=21">coincide</a></td><td
+								class="cell-SpfY">/ˌkoʊɪnˈsaɪd/</td><td class="cell-bc@N">v. 巧合，同时发生</td><td class="cell-yb`Q">coincidence n.
+								巧合，同时发生</td><td class="cell-ltTS">It was pure coincidence that we met in Paris</td></tr><tr
+							id="27b06c4f-5a3d-80f3-ad4b-ed12aa4cd8cd"><td class="cell-title"><a
+									href="https://www.notion.so/commitment-27b06c4f5a3d80f3ad4bed12aa4cd8cd?pvs=21">commitment</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 忠诚，献身；承诺，保证；奉献，投入</td><td class="cell-yb`Q">commit v.
+								犯（罪、错）；投入；承担义务；郑重承诺，忠于；订婚</td><td class="cell-ltTS">= loyalty 忠诚，忠实<br />obligation 义务；责任；职责</td></tr><tr
+							id="28406c4f-5a3d-802c-9a03-c467f3ea8f27"><td class="cell-title"><a
+									href="https://www.notion.so/concert-28406c4f5a3d802c9a03c467f3ea8f27?pvs=21">concert</a></td><td
+								class="cell-SpfY">/ˈkɒnsət/</td><td class="cell-bc@N">n. 音乐会，演奏会<br />v. 共同议定，协调</td><td
+								class="cell-yb`Q">concerted: /kənˈsɜːtɪd/ adj. 共同筹划的，一致的</td><td class="cell-ltTS">make concerted efforts
+								齐心协力</td></tr><tr id="27106c4f-5a3d-80ab-b87f-dac97055c060"><td class="cell-title"><a
+									href="https://www.notion.so/conspire-27106c4f5a3d80abb87fdac97055c060?pvs=21">conspire</a></td><td
+								class="cell-SpfY">/kənˈspaɪə(r)/</td><td class="cell-bc@N">v. 密谋，共谋</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">widespread conspiracy 广泛的阴谋：指在广泛范围内策划和实施的阴谋活动，通常涉及多个人或组织<br />conspiracy theory
+								阴谋论</td></tr><tr id="28606c4f-5a3d-8029-926a-cffd8d8f460b"><td class="cell-title"><a
+									href="https://www.notion.so/controversy-28606c4f5a3d8029926acffd8d8f460b?pvs=21">controversy</a></td><td
+								class="cell-SpfY">/ˈkɒntrəvɜːsi/</td><td class="cell-bc@N">n. 争论，争议</td><td class="cell-yb`Q">controversial adj.
+								有争议的，引发争论的</td><td class="cell-ltTS">dispute n. 争论，辩论，纠纷 v. 对……提出质疑，否认</td></tr><tr
+							id="28e06c4f-5a3d-80de-9e9e-da49de62412f"><td class="cell-title"><a
+									href="https://www.notion.so/cousin-28e06c4f5a3d80de9e9eda49de62412f?pvs=21">cousin</a></td><td
+								class="cell-SpfY">/ˈkʌz(ə)n/</td><td class="cell-bc@N">n. 堂（表）兄弟，堂（表）姐妹</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="28506c4f-5a3d-80ab-a783-cfc9fcf9a01c"><td class="cell-title"><a
+									href="https://www.notion.so/credit-28506c4f5a3d80aba783cfc9fcf9a01c?pvs=21">credit</a></td><td
+								class="cell-SpfY">/ˈkredɪt/</td><td class="cell-bc@N">n. 信用，信贷，赊购；赞扬，信誉，声望；存款金额，余额；补助</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">deserve great credit for doing sth.: 做某事值得称赞</td></tr><tr
+							id="28406c4f-5a3d-8076-8331-e4c36dae5487"><td class="cell-title"><a
+									href="https://www.notion.so/deficiency-28406c4f5a3d80768331e4c36dae5487?pvs=21">deficiency</a></td><td
+								class="cell-SpfY">/dɪˈfɪʃ(ə)nsi/</td><td class="cell-bc@N">n. 缺乏，不足</td><td class="cell-yb`Q">deficient: adj.
+								缺乏的，不足的</td><td class="cell-ltTS">= lack of</td></tr><tr id="28e06c4f-5a3d-801f-9adc-d207733cba79"><td
+								class="cell-title"><a
+									href="https://www.notion.so/denial-28e06c4f5a3d801f9adcd207733cba79?pvs=21">denial</a></td><td
+								class="cell-SpfY">/dɪˈnaɪəl/</td><td class="cell-bc@N">n. 否认；拒绝接受，拒不承认；剥夺</td><td class="cell-yb`Q">deny: v.
+								否认；拒绝承认；拒绝给予<br />deniable: adj. 可否认的 → 反 undeniable</td><td class="cell-ltTS">= refuse to allow, refuse to
+								accept</td></tr><tr id="28306c4f-5a3d-803c-9228-f6111d986d8f"><td class="cell-title"><a
+									href="https://www.notion.so/deposit-28306c4f5a3d803c9228f6111d986d8f?pvs=21">deposit</a></td><td
+								class="cell-SpfY">/dɪˈpɒzɪt/</td><td class="cell-bc@N">n. 订金；押金；存款</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">deposit account 定期存款帐户,存款账户</td></tr><tr id="27006c4f-5a3d-808d-b7e5-df9a16d938a9"><td
+								class="cell-title"><a
+									href="https://www.notion.so/depot-27006c4f5a3d808db7e5df9a16d938a9?pvs=21">depot</a></td><td
+								class="cell-SpfY">/ˈdepəʊ/</td><td class="cell-bc@N">n. 仓库，库房</td><td class="cell-yb`Q">= storage</td><td
+								class="cell-ltTS">salt depot 盐库</td></tr><tr id="28306c4f-5a3d-80b3-8e72-f263fe382ee7"><td class="cell-title"><a
+									href="https://www.notion.so/deprive-28306c4f5a3d80b38e72f263fe382ee7?pvs=21">deprive</a></td><td
+								class="cell-SpfY">/dɪˈpraɪv/</td><td class="cell-bc@N">v. 剥夺，使丧失；免去……的职务</td><td class="cell-yb`Q">deprived:
+								adj. 贫困的，穷苦的 = poor</td><td class="cell-ltTS">the deprived areas 贫困地区</td></tr><tr
+							id="28506c4f-5a3d-8046-ab34-fedd00bd130b"><td class="cell-title"><a
+									href="https://www.notion.so/destiny-28506c4f5a3d8046ab34fedd00bd130b?pvs=21">destiny</a></td><td
+								class="cell-SpfY">/ˈdestəni/</td><td class="cell-bc@N">n. 命运，定数；天意</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">inherent ability is destiny 天生的能力就是命运</td></tr><tr
+							id="27c06c4f-5a3d-8057-8955-c8eb43685e8c"><td class="cell-title"><a
+									href="https://www.notion.so/discipline-27c06c4f5a3d80578955c8eb43685e8c?pvs=21">discipline</a></td><td
+								class="cell-SpfY">/ˈdɪsəplɪn/</td><td class="cell-bc@N">n. 纪律，风纪；惩罚，处分；训导，管教；训练，锻炼；自制力，自律能力；（尤指大学的）科目，学科<br />v.
+								惩罚，处分；训练，管教</td><td class="cell-yb`Q">disciplined: adj. 训练有素的，遵守纪律的</td><td class="cell-ltTS">academic
+								discipline 学术学科</td></tr><tr id="28306c4f-5a3d-807d-b3bd-df699e97674f"><td class="cell-title"><a
+									href="https://www.notion.so/disposable-28306c4f5a3d807db3bddf699e97674f?pvs=21">disposable</a></td><td
+								class="cell-SpfY">/dɪˈspəʊzəb(ə)l/</td><td class="cell-bc@N">adj. 一次性的，用完即丢弃的；<br />可支配的，可自由使用的 (available for
+								use)</td><td class="cell-yb`Q"></td><td class="cell-ltTS">disposable chopsticks 一次性筷子<br />disposable income
+								可支配收入</td></tr><tr id="27006c4f-5a3d-80b7-b2d7-e80658280adc"><td class="cell-title"><a
+									href="https://www.notion.so/dissertation-27006c4f5a3d80b7b2d7e80658280adc?pvs=21">dissertation</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 专题论文，学位论文；学术演讲</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">= essay n. （学生为某门课程所写的）短文，论说文</td></tr><tr id="27b06c4f-5a3d-808d-bad7-d96c46b4a53b"><td
+								class="cell-title"><a
+									href="https://www.notion.so/ditch-27b06c4f5a3d808dbad7d96c46b4a53b?pvs=21">ditch</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 沟渠，壕沟</td><td class="cell-yb`Q"></td><td class="cell-ltTS">pit
+								n. 坑，洼；（表面上的）疤痕，凹陷；矿井</td></tr><tr id="28506c4f-5a3d-8036-9dd8-d98145fc8bf7"><td class="cell-title"><a
+									href="https://www.notion.so/drain-28506c4f5a3d80369dd8d98145fc8bf7?pvs=21">drain</a></td><td
+								class="cell-SpfY">/dreɪn/</td><td class="cell-bc@N">v. （使）排出，滤干；喝光，喝干</td><td class="cell-yb`Q">drainage
+								/ˈdreɪnɪdʒ/ n. 排水系统</td><td class="cell-ltTS">drainage system: 排水系统</td></tr><tr
+							id="28606c4f-5a3d-8037-b10e-e1d7b0fef4d3"><td class="cell-title"><a
+									href="https://www.notion.so/drift-28606c4f5a3d8037b10ee1d7b0fef4d3?pvs=21">drift</a></td><td
+								class="cell-SpfY">/drɪft/</td><td class="cell-bc@N">v. 飘移，漂流；任其自然地（或不知不觉地）进入（某种状态）；流浪，漂泊</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">continental drift 大陆漂移学说</td></tr><tr
+							id="27506c4f-5a3d-8042-b6d3-e7298abf8bf4"><td class="cell-title"><a
+									href="https://www.notion.so/duly-27506c4f5a3d8042b6d3e7298abf8bf4?pvs=21">duly</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">adv. 适当地，恰当地</td><td class="cell-yb`Q">unduly adv.
+								过分；过度；不适当地</td><td class="cell-ltTS">whose monumental contributions are duly
+								celebrated<br />不朽贡献得到了应有的颂扬</td></tr><tr id="27b06c4f-5a3d-8019-b93d-dfc7dabf0d12"><td class="cell-title"><a
+									href="https://www.notion.so/electrician-27b06c4f5a3d8019b93ddfc7dabf0d12?pvs=21">electrician</a></td><td
+								class="cell-SpfY">/ɪˌlekˈtrɪʃ(ə)n/</td><td class="cell-bc@N">n. 电工，电气技师</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">⚠️ 注意拼写<br />plumber: n. 水管工人，水电工<br />poacher: n. 偷猎者</td></tr><tr
+							id="27406c4f-5a3d-807c-8b9e-f7c91ab897cf"><td class="cell-title"><a
+									href="https://www.notion.so/endeavor-27406c4f5a3d807c8b9ef7c91ab897cf?pvs=21">endeavor</a></td><td
+								class="cell-SpfY">/ɪnˈdevə(r)/</td><td class="cell-bc@N">n. 努力；尽力</td><td class="cell-yb`Q">= hard work</td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-80ca-badf-e54719d745f2"><td class="cell-title"><a
+									href="https://www.notion.so/erect-27b06c4f5a3d80cabadfe54719d745f2?pvs=21">erect</a></td><td
+								class="cell-SpfY">/ɪˈrekt/</td><td class="cell-bc@N">v. 搭建，建造</td><td class="cell-yb`Q">demolish: v. 拆毁</td><td
+								class="cell-ltTS">It took an estimated 1,500 years to erect.</td></tr><tr
+							id="27106c4f-5a3d-802b-b455-cdf67a4c6059"><td class="cell-title"><a
+									href="https://www.notion.so/evade-27106c4f5a3d802bb455cdf67a4c6059?pvs=21">evade</a></td><td
+								class="cell-SpfY">/ɪˈveɪd/</td><td class="cell-bc@N">v. 规避，逃避</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">flee v. 逃跑 注意 invade v. 武力入侵，侵略</td></tr><tr id="28e06c4f-5a3d-80f8-984d-d498aacc3718"><td
+								class="cell-title"><a
+									href="https://www.notion.so/exaggerate-28e06c4f5a3d80f8984dd498aacc3718?pvs=21">exaggerate</a></td><td
+								class="cell-SpfY">/ɪɡˈzædʒəreɪt/</td><td class="cell-bc@N">v. 夸大，言过其实；使扩大</td><td class="cell-yb`Q">exaggerated
+								adj. 夸张的，夸大的，言过其实的</td><td class="cell-ltTS"></td></tr><tr id="27406c4f-5a3d-8075-8dda-dfbae546cbec"><td
+								class="cell-title"><a
+									href="https://www.notion.so/excessive-27406c4f5a3d80758ddadfbae546cbec?pvs=21">excessive</a></td><td
+								class="cell-SpfY">ɪkˈsesɪv</td><td class="cell-bc@N">adj. 过度的，过多的</td><td class="cell-yb`Q">exceed: v.
+								超过（数目或数量）；超越（法律、命令等）的限制</td><td class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-80e8-9e69-c92198698384"><td
+								class="cell-title"><a
+									href="https://www.notion.so/fallible-27c06c4f5a3d80e89e69c92198698384?pvs=21">fallible</a></td><td
+								class="cell-SpfY">/ˈfæləb(ə)l/</td><td class="cell-bc@N">adj. 易犯错误的；不可靠的</td><td class="cell-yb`Q">fallibility:
+								n. 不可靠，易错</td><td class="cell-ltTS">fallible: able to make mistakes or be wrong</td></tr><tr
+							id="27b06c4f-5a3d-8034-b3ec-c6719176fa08"><td class="cell-title"><a
+									href="https://www.notion.so/fashion-27b06c4f5a3d8034b3ecc6719176fa08?pvs=21">fashion</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 时髦打扮，流行装扮；时尚，时兴<br />v. （尤指用手工）制作，使成形</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">fashioned out of deer antlers 由鹿角制成的（工具）</td></tr><tr
+							id="27b06c4f-5a3d-8005-846a-eeac83244e56"><td class="cell-title"><a
+									href="https://www.notion.so/fence-27b06c4f5a3d8005846aeeac83244e56?pvs=21">fence</a></td><td
+								class="cell-SpfY">/fens/</td><td class="cell-bc@N">n. 篱笆，栅栏，围栏</td><td class="cell-yb`Q">复数 fences</td><td
+								class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="28606c4f-5a3d-80ef-be1e-c6f1162ae17a"><td class="cell-title"><a
+									href="https://www.notion.so/fierce-28606c4f5a3d80efbe1ec6f1162ae17a?pvs=21">fierce</a></td><td
+								class="cell-SpfY">/fɪəs/</td><td class="cell-bc@N">adj. （动作或情感）强烈的，激烈的；（人或动物）凶猛的，狂怒的；（天气）狂暴的，恶劣的</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">fierce competition 激烈竞争</td></tr><tr
+							id="27c06c4f-5a3d-8059-a6e7-e4d62689bf92"><td class="cell-title"><a
+									href="https://www.notion.so/folklore-27c06c4f5a3d8059a6e7e4d62689bf92?pvs=21">folklore</a></td><td
+								class="cell-SpfY">/ˈfəʊklɔː(r)/</td><td class="cell-bc@N">n. 民间传说，民俗</td><td class="cell-yb`Q">folk adj.
+								民俗的，传统的</td><td class="cell-ltTS"></td></tr><tr id="28606c4f-5a3d-8014-a3ab-c1fc948079bc"><td
+								class="cell-title"><a
+									href="https://www.notion.so/footwear-28606c4f5a3d8014a3abc1fc948079bc?pvs=21">footwear</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 鞋类</td><td class="cell-yb`Q"></td><td class="cell-ltTS">trainers
+								n. 运动鞋</td></tr><tr id="27106c4f-5a3d-8077-b93a-ff835f7a5aa3"><td class="cell-title"><a
+									href="https://www.notion.so/fugitive-27106c4f5a3d8077b93aff835f7a5aa3?pvs=21">fugitive</a></td><td
+								class="cell-SpfY">/ˈfjudʒətɪv/</td><td class="cell-bc@N">n. 逃亡者</td><td class="cell-yb`Q">= escapee 逃亡者, escape
+								v. 逃亡</td><td class="cell-ltTS"></td></tr><tr id="28506c4f-5a3d-802c-b2f6-eb2ff3b02297"><td
+								class="cell-title"><a
+									href="https://www.notion.so/gardening-28506c4f5a3d802cb2f6eb2ff3b02297?pvs=21">gardening</a></td><td
+								class="cell-SpfY">/ˈɡɑːdnɪŋ/</td><td class="cell-bc@N">n. 园艺</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">marketing n./v. 促销，营销</td></tr><tr id="27206c4f-5a3d-80d7-a828-da0cb6cfc676"><td
+								class="cell-title"><a
+									href="https://www.notion.so/genome-27206c4f5a3d80d7a828da0cb6cfc676?pvs=21">genome</a></td><td
+								class="cell-SpfY">/ˈdʒiːnəʊm/</td><td class="cell-bc@N">n. 基因组，染色体组</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">A genome is <strong>the complete set of genetic material in an organism</strong></td></tr><tr
+							id="27506c4f-5a3d-8040-9058-cf0dc865748a"><td class="cell-title"><a
+									href="https://www.notion.so/gets-one-s-kicks-from-27506c4f5a3d80409058cf0dc865748a?pvs=21">gets one’s kicks
+									from</a></td><td class="cell-SpfY"></td><td class="cell-bc@N">从……找到了乐趣</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-8059-8fa3-d640ba764f7c"><td class="cell-title"><a
+									href="https://www.notion.so/harbor-28e06c4f5a3d80598fa3d640ba764f7c?pvs=21">harbor</a></td><td
+								class="cell-SpfY">/ˈhɑːbə(r)/</td><td class="cell-bc@N">n. 港，海港</td><td class="cell-yb`Q">也可以写成 harbour</td><td
+								class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="28e06c4f-5a3d-80f8-b3e2-fd87d43d36f5"><td class="cell-title"><a
+									href="https://www.notion.so/hardship-28e06c4f5a3d80f8b3e2fd87d43d36f5?pvs=21">hardship</a></td><td
+								class="cell-SpfY">/ˈhɑːdʃɪp/</td><td class="cell-bc@N">n. 困苦，艰难</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">during hardships: 在困难时期</td></tr><tr id="27b06c4f-5a3d-80e0-a969-f49530ca62a9"><td
+								class="cell-title"><a
+									href="https://www.notion.so/harsh-27b06c4f5a3d80e0a969f49530ca62a9?pvs=21">harsh</a></td><td
+								class="cell-SpfY">/hɑːʃ/</td><td class="cell-bc@N">adj. （环境）恶劣的，艰苦的；严厉的，残酷的</td><td class="cell-yb`Q">harsh
+								times: 严酷的时期，艰难的岁月</td><td class="cell-ltTS"></td></tr><tr id="28406c4f-5a3d-80ef-8539-fa7e8631807e"><td
+								class="cell-title"><a
+									href="https://www.notion.so/hectare-28406c4f5a3d80ef8539fa7e8631807e?pvs=21">hectare</a></td><td
+								class="cell-SpfY">/ˈhekteə(r)/</td><td class="cell-bc@N">n. 公顷</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-80b9-88a8-e5815c818b8f"><td class="cell-title"><a
+									href="https://www.notion.so/hollow-27b06c4f5a3d80b988a8e5815c818b8f?pvs=21">hollow</a></td><td
+								class="cell-SpfY">/ˈhɒləʊ/</td><td class="cell-bc@N">adj. 空的，空心的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">shallow: adj. 浅的</td></tr><tr id="27406c4f-5a3d-80db-b723-d0e2e6e2fe5a"><td
+								class="cell-title"><a
+									href="https://www.notion.so/hostel-27406c4f5a3d80dbb723d0e2e6e2fe5a?pvs=21">hostel</a></td><td
+								class="cell-SpfY">/ˈhɒst(ə)l/</td><td class="cell-bc@N">n. （免费或廉价的）旅社，招待所</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">hotel n. 酒店 hostile adj. 敌对的</td></tr><tr id="28e06c4f-5a3d-80de-b478-de4feffd8691"><td
+								class="cell-title"><a
+									href="https://www.notion.so/inadvertently-28e06c4f5a3d80deb478de4feffd8691?pvs=21">inadvertently</a></td><td
+								class="cell-SpfY">/ˌɪnədˈvɜːt(ə)ntli/</td><td class="cell-bc@N">adv. 无意地，不经意地</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-80f5-a465-d5aaaf955802"><td class="cell-title"><a
+									href="https://www.notion.so/inevitable-28e06c4f5a3d80f5a465d5aaaf955802?pvs=21">inevitable</a></td><td
+								class="cell-SpfY">/ɪnˈevɪtəb(ə)l/</td><td class="cell-bc@N">adj. 必然发生的，不可避免的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-80f4-8bf3-e93c8bcef1a6"><td class="cell-title"><a
+									href="https://www.notion.so/ingredient-28306c4f5a3d80f48bf3e93c8bcef1a6?pvs=21">ingredient</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. （食品的）成分，原料；要素，因素</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28506c4f-5a3d-8003-830a-d02505ec58be"><td class="cell-title"><a
+									href="https://www.notion.so/innate-28506c4f5a3d8003830ad02505ec58be?pvs=21">innate</a></td><td
+								class="cell-SpfY">/ɪˈneɪt/</td><td class="cell-bc@N">adj. 先天的，固有的；（信仰）根深蒂固的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-8019-9cbd-fc42069f5433"><td class="cell-title"><a
+									href="https://www.notion.so/input-27c06c4f5a3d80199cbdfc42069f5433?pvs=21">input</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 投入，输进；输入的信息；（为帮助某人做出决定而提供的）建议，意见</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">AI already has some input into how resources are used in
+								…<br />人工智能已经对 … 的资源使用方式有了一些投入。</td></tr><tr id="28506c4f-5a3d-8046-be89-ee600702877e"><td class="cell-title"><a
+									href="https://www.notion.so/intervention-28506c4f5a3d8046be89ee600702877e?pvs=21">intervention</a></td><td
+								class="cell-SpfY">/ˌɪntəˈvenʃ(ə)n/</td><td class="cell-bc@N">n. 干预，介入；调停，斡旋</td><td class="cell-yb`Q">intervene
+								/ˌɪntəˈviːn/ v. 干预，干涉；插话，打岔</td><td class="cell-ltTS">interventions should be delivered in a subtle way to
+								maximise their effectiveness 干预应该以一种微妙的方式进行以使其效果最大化</td></tr><tr id="27b06c4f-5a3d-80b5-afbe-da8f0505a056"><td
+								class="cell-title"><a
+									href="https://www.notion.so/invasive-27b06c4f5a3d80b5afbeda8f0505a056?pvs=21">invasive</a></td><td
+								class="cell-SpfY">/ɪnˈveɪsɪv/</td><td class="cell-bc@N">adj. 扩散性的，侵入的</td><td class="cell-yb`Q">invade v.
+								武力入侵，侵略<br />invasion n. 入侵</td><td class="cell-ltTS">注意 evade: v. 逃跑，规避</td></tr><tr
+							id="27b06c4f-5a3d-8093-86f4-ec90f77adef3"><td class="cell-title"><a
+									href="https://www.notion.so/invest-27b06c4f5a3d809386f4ec90f77adef3?pvs=21">invest</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">v. 投资；投入（时间或精力）</td><td class="cell-yb`Q">investment n.
+								投入，投资<br />= financial capital 资本</td><td class="cell-ltTS"></td></tr><tr
+							id="28e06c4f-5a3d-807b-8989-c189f8b283fe"><td class="cell-title"><a
+									href="https://www.notion.so/involvement-28e06c4f5a3d807b8989c189f8b283fe?pvs=21">involvement</a></td><td
+								class="cell-SpfY">/ɪnˈvɒlvmənt/</td><td class="cell-bc@N">n. 参与，介入</td><td class="cell-yb`Q">involve in
+								牵涉，包含，参与</td><td class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-8074-8bbb-e2b4adb44882"><td
+								class="cell-title"><a
+									href="https://www.notion.so/lettuce-27b06c4f5a3d80748bbbe2b4adb44882?pvs=21">lettuce</a></td><td
+								class="cell-SpfY">/ˈletɪs/</td><td class="cell-bc@N">n. [园艺] 生菜；莴苣</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-8080-be02-cbd0e8cc1bb6"><td class="cell-title"><a
+									href="https://www.notion.so/marketing-28306c4f5a3d8080be02cbd0e8cc1bb6?pvs=21">marketing</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n./v. 促销，营销</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-804e-9b48-da8c3604d59b"><td class="cell-title"><a
+									href="https://www.notion.so/marvellous-28306c4f5a3d804e9b48da8c3604d59b?pvs=21">marvellous</a></td><td
+								class="cell-SpfY">/ˈmɑːvələs/</td><td class="cell-bc@N">adj. 极好的，绝妙的；令人惊奇的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">marvellous opportunity 千载难逢的机会</td></tr><tr id="27c06c4f-5a3d-80eb-8a0d-ca1d99fa0a53"><td
+								class="cell-title"><a
+									href="https://www.notion.so/medieval-27c06c4f5a3d80eb8a0dca1d99fa0a53?pvs=21">medieval</a></td><td
+								class="cell-SpfY">/ˌmediˈiːv(ə)l/</td><td class="cell-bc@N">adj. 中世纪的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">The middle age: 中世纪</td></tr><tr id="27006c4f-5a3d-80b4-b17b-c4eec96cf081"><td
+								class="cell-title"><a
+									href="https://www.notion.so/meditation-27006c4f5a3d80b4b17bc4eec96cf081?pvs=21">meditation</a></td><td
+								class="cell-SpfY"> /ˌmedɪˈteɪʃ(ə)n/</td><td class="cell-bc@N">n. 冥想，打坐；沉思，深思</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-8047-87f8-f528feef6c23"><td class="cell-title"><a
+									href="https://www.notion.so/military-28306c4f5a3d804787f8f528feef6c23?pvs=21">military</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">adj. 军事的，军队的；陆军的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="28306c4f-5a3d-807b-969f-e22a3457cacf"><td class="cell-title"><a
+									href="https://www.notion.so/moisture-28306c4f5a3d807b969fe22a3457cacf?pvs=21">moisture</a></td><td
+								class="cell-SpfY">/ˈmɔɪstʃə(r)/</td><td class="cell-bc@N">n. 潮气，水分</td><td class="cell-yb`Q">moist: adj.
+								潮润的，微湿的；多雨的</td><td class="cell-ltTS"></td></tr><tr id="27406c4f-5a3d-8040-8b78-c079a52ba131"><td
+								class="cell-title"><a
+									href="https://www.notion.so/monument-27406c4f5a3d80408b78c079a52ba131?pvs=21">monument</a></td><td
+								class="cell-SpfY">/ˈmɒnjumənt/</td><td class="cell-bc@N">n. 纪念碑，纪念馆，纪念物</td><td class="cell-yb`Q">monumental
+								adj. 丰碑式的，伟大的</td><td class="cell-ltTS">whose monumental contributions are duly
+								celebrated<br />不朽贡献得到了应有的（恰当的）颂扬</td></tr><tr id="27b06c4f-5a3d-8084-a7cb-dbc77a3e4766"><td
+								class="cell-title"><a
+									href="https://www.notion.so/morale-27b06c4f5a3d8084a7cbdbc77a3e4766?pvs=21">morale</a></td><td
+								class="cell-SpfY">/məˈrɑːl/</td><td class="cell-bc@N">n. 士气，精神面貌</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-80ba-a248-ef1679e06746"><td class="cell-title"><a
+									href="https://www.notion.so/mouth-28e06c4f5a3d80baa248ef1679e06746?pvs=21">mouth</a></td><td
+								class="cell-SpfY">/maʊθ/</td><td class="cell-bc@N">n. 嘴，口腔</td><td class="cell-yb`Q">mouse /maʊs/ n.
+								老鼠；鼠标</td><td class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="28506c4f-5a3d-800f-b019-f9b856d3dcb9"><td
+								class="cell-title"><a
+									href="https://www.notion.so/obesity-28506c4f5a3d800fb019f9b856d3dcb9?pvs=21">obesity</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 过度肥胖，肥胖症</td><td class="cell-yb`Q">obese /əʊˈbiːs/ n.
+								过度肥胖，肥胖症</td><td class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="27206c4f-5a3d-8058-90a8-c10e75380f71"><td
+								class="cell-title"><a
+									href="https://www.notion.so/obscure-27206c4f5a3d805890a8c10e75380f71?pvs=21">obscure</a></td><td
+								class="cell-SpfY">/əbˈskjʊə(r)/</td><td class="cell-bc@N">adj. 难以说清楚的，模糊的；鲜为人知的<br />v. 遮掩，遮蔽</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">England’s dense cloud cover would have obscured their view of the
+								skies. 英格兰的稠密云层会遮住他们的视线。</td></tr><tr id="28e06c4f-5a3d-80e8-a8a3-e1b4e531434a"><td class="cell-title"><a
+									href="https://www.notion.so/outsider-28e06c4f5a3d80e8a8a3e1b4e531434a?pvs=21">outsider</a></td><td
+								class="cell-SpfY">/ˌaʊtˈsaɪdə(r)/</td><td class="cell-bc@N">n. 局外人， 外人</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">指（比赛中）不大可能获胜的人（或动物）</td></tr><tr id="28506c4f-5a3d-803b-8cdc-ff1a53827fd2"><td
+								class="cell-title"><a
+									href="https://www.notion.so/panel-28506c4f5a3d803b8cdcff1a53827fd2?pvs=21">panel</a></td><td
+								class="cell-SpfY">/ˈpæn(ə)l/</td><td class="cell-bc@N">n. 板,平板</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">solar panels 太阳能电池板（从可持续的来源发电）</td></tr><tr id="27b06c4f-5a3d-80cf-9820-ca2bcfcc4871"><td
+								class="cell-title"><a href="https://www.notion.so/peer-27b06c4f5a3d80cf9820ca2bcfcc4871?pvs=21">peer</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 同龄人，同等地位的人 v. 凝视</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-8045-ac50-fe46ef09f112"><td class="cell-title"><a
+									href="https://www.notion.so/pirate-28e06c4f5a3d8045ac50fe46ef09f112?pvs=21">pirate</a></td><td
+								class="cell-SpfY">/ˈpaɪrət/</td><td class="cell-bc@N">n. 海盗，海上劫掠者</td><td class="cell-yb`Q">piracy: n.
+								海盗行为</td><td class="cell-ltTS">private. adj. 私有的；私用的</td></tr><tr id="27b06c4f-5a3d-803c-8afc-c7d002add10f"><td
+								class="cell-title"><a href="https://www.notion.so/pit-27b06c4f5a3d803c8afcc7d002add10f?pvs=21">pit</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 坑，洼；（表面上的）疤痕，凹陷；矿井</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-8058-90da-caaf06b620d7"><td class="cell-title"><a
+									href="https://www.notion.so/poach-27b06c4f5a3d805890dacaaf06b620d7?pvs=21">poach</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">v. 偷猎</td><td class="cell-yb`Q">poacher n. 偷猎者</td><td
+								class="cell-ltTS"></td></tr><tr id="27106c4f-5a3d-80e1-9f03-f653c462b9a5"><td class="cell-title"><a
+									href="https://www.notion.so/podcast-27106c4f5a3d80e19f03f653c462b9a5?pvs=21">podcast</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 播客</td><td class="cell-yb`Q"></td><td class="cell-ltTS">⚠️
+								注意拼写</td></tr><tr id="27c06c4f-5a3d-80cf-ba0e-f9758a0446c8"><td class="cell-title"><a
+									href="https://www.notion.so/police-27c06c4f5a3d80cfba0ef9758a0446c8?pvs=21">police</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 警察部门；警察<br />v. 巡查，维护治安；监督，管制</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">Powerful artificial intelligence (AI) needs to be reliably aligned with human values, but does
+								this mean AI will eventually have to <strong>police</strong> those values? 监督这些价值观</td></tr><tr
+							id="28406c4f-5a3d-8036-b8a3-ea4b3f9512dc"><td class="cell-title"><a
+									href="https://www.notion.so/pottery-28406c4f5a3d8036b8a3ea4b3f9512dc?pvs=21">pottery</a></td><td
+								class="cell-SpfY">/ˈpɒtəri/</td><td class="cell-bc@N">n. 陶器；陶土，黏土；制陶，陶艺</td><td class="cell-yb`Q">pot n.
+								锅；（盛食品的）罐，瓶；壶；花盆</td><td class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-8036-8fad-f0600c7c8fb3"><td
+								class="cell-title"><a
+									href="https://www.notion.so/pouch-27c06c4f5a3d80368fadf0600c7c8fb3?pvs=21">pouch</a></td><td
+								class="cell-SpfY">/paʊtʃ/</td><td class="cell-bc@N">n. 小袋子，荷包；邮袋，文件袋；（袋鼠、考拉等的）育儿袋</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-80fe-9a38-ef36f0c0ba9f"><td
+								class="cell-title"><a
+									href="https://www.notion.so/poverty-28306c4f5a3d80fe9a38ef36f0c0ba9f?pvs=21">poverty</a></td><td
+								class="cell-SpfY">/ˈpɒvəti/</td><td class="cell-bc@N">n. 贫穷，贫困</td><td class="cell-yb`Q">poor = deprived: adj.
+								贫穷的；贫困的</td><td class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="27c06c4f-5a3d-8063-9774-e3a67308396c"><td
+								class="cell-title"><a
+									href="https://www.notion.so/practitioner-27c06c4f5a3d80639774e3a67308396c?pvs=21">practitioner</a></td><td
+								class="cell-SpfY">/prækˈtɪʃənə(r)/</td><td class="cell-bc@N">n. （医学界或法律界的）从业人员，执业者</td><td
+								class="cell-yb`Q">practice: n./v. 实践、练习、职业活动</td><td class="cell-ltTS"></td></tr><tr
+							id="27006c4f-5a3d-8054-a30f-f75fbdbfcc89"><td class="cell-title"><a
+									href="https://www.notion.so/prayer-27006c4f5a3d8054a30ff75fbdbfcc89?pvs=21">prayer</a></td><td
+								class="cell-SpfY">/preə(r)/</td><td class="cell-bc@N">n. 祷文，祷词；祈祷，祷告</td><td class="cell-yb`Q">pray: /preɪ/ v.
+								祈祷，祷告；渴望，祈望</td><td class="cell-ltTS">prey /preɪ/ n. 猎物 predator /ˈpredətə(r)/ n. 捕食者</td></tr><tr
+							id="27406c4f-5a3d-8038-9221-ff30c1cb7be3"><td class="cell-title"><a
+									href="https://www.notion.so/predecessor-27406c4f5a3d80389221ff30c1cb7be3?pvs=21">predecessor</a></td><td
+								class="cell-SpfY">/ˈpriːdəsesə(r)/</td><td class="cell-bc@N">n. 前任，前辈</td><td class="cell-yb`Q">successor n.
+								继任者，后继者</td><td class="cell-ltTS">success n. 成功</td></tr><tr id="27106c4f-5a3d-8038-a0a2-de41c6cb7310"><td
+								class="cell-title"><a href="https://www.notion.so/prevalent-27106c4f5a3d8038a0a2de41c6cb7310?pvs=21">prevalent
+								</a></td><td class="cell-SpfY">/ˈprevələnt/</td><td class="cell-bc@N">adj. 盛行的，普遍的</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS"> </td></tr><tr id="27c06c4f-5a3d-80e0-a33e-e816cf9ec195"><td
+								class="cell-title"><a
+									href="https://www.notion.so/primary-sources-27c06c4f5a3d80e0a33ee816cf9ec195?pvs=21">primary
+									sources</a></td><td class="cell-SpfY"></td><td class="cell-bc@N">原始资料，第一手资料</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-8012-9a4f-e5682aeca242"><td class="cell-title"><a
+									href="https://www.notion.so/primitive-27b06c4f5a3d80129a4fe5682aeca242?pvs=21">primitive</a></td><td
+								class="cell-SpfY">/ˈprɪmətɪv/</td><td class="cell-bc@N">adj. 原始的，远古的；（器物等）粗糙的，简陋的</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-80a2-ba71-ec764b3a5e93"><td
+								class="cell-title"><a
+									href="https://www.notion.so/profitable-27c06c4f5a3d80a2ba71ec764b3a5e93?pvs=21">profitable</a></td><td
+								class="cell-SpfY">/ˈprɒfɪtəb(ə)l/</td><td class="cell-bc@N">adj. 盈利的，有利可图的；有益的，有用的</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">profit: n. 利润，盈利；&lt;正式&gt; 利益，好处</td></tr><tr
+							id="28506c4f-5a3d-80db-aab3-e7b28320c60a"><td class="cell-title"><a
+									href="https://www.notion.so/progressive-28506c4f5a3d80dbaab3e7b28320c60a?pvs=21">progressive</a></td><td
+								class="cell-SpfY">/prəˈɡresɪv/</td><td class="cell-bc@N">adj. 进步的，先进的</td><td class="cell-yb`Q">progress: n./v.
+								进步，进展；前进，行进</td><td class="cell-ltTS">progressive thinkers: 进步的思想家</td></tr><tr
+							id="27506c4f-5a3d-803a-81bb-edbfd846dbbf"><td class="cell-title"><a
+									href="https://www.notion.so/prosper-27506c4f5a3d803a81bbedbfd846dbbf?pvs=21">prosper</a></td><td
+								class="cell-SpfY">/ˈprɒspə(r)/</td><td class="cell-bc@N">v. 繁荣，成功，发达</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"> =successful 成功 thrive 繁荣 == flourish</td></tr><tr
+							id="28e06c4f-5a3d-809d-97e9-d117d6ca7157"><td class="cell-title"><a
+									href="https://www.notion.so/purple-28e06c4f5a3d809d97e9d117d6ca7157?pvs=21">purple</a></td><td
+								class="cell-SpfY">/ˈpɜːp(ə)l/</td><td class="cell-bc@N">adj. 紫色的，紫红色的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="28e06c4f-5a3d-80fb-9ffe-f5381163dfb7"><td class="cell-title"><a
+									href="https://www.notion.so/ransom-28e06c4f5a3d80fb9ffef5381163dfb7?pvs=21">ransom</a></td><td
+								class="cell-SpfY">/ˈrænsəm/</td><td class="cell-bc@N">n. 赎金</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-8012-9777-de69276d6be0"><td class="cell-title"><a
+									href="https://www.notion.so/receptionist-28306c4f5a3d80129777de69276d6be0?pvs=21">receptionist</a></td><td
+								class="cell-SpfY">/rɪˈsepʃənɪst/</td><td class="cell-bc@N">n. 接待员</td><td class="cell-yb`Q">reception:
+								/rɪˈsepʃ(ə)n/ 接待处，服务台</td><td class="cell-ltTS">⚠️ 注意拼写</td></tr><tr
+							id="27106c4f-5a3d-8052-aa9a-d7f9141f44a7"><td class="cell-title"><a
+									href="https://www.notion.so/recollection-27106c4f5a3d8052aa9ad7f9141f44a7?pvs=21">recollection</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 记忆力，回忆</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28406c4f-5a3d-80a0-8e42-d69beac8758f"><td class="cell-title"><a
+									href="https://www.notion.so/rectangular-28406c4f5a3d80a08e42d69beac8758f?pvs=21">rectangular</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">adj. 矩形的</td><td class="cell-yb`Q">rectangle 矩形</td><td
+								class="cell-ltTS">triangular: adj. 三角形的 ⚠️ 注意拼写</td></tr><tr id="28e06c4f-5a3d-806d-9ab7-c056fd12e3ce"><td
+								class="cell-title"><a
+									href="https://www.notion.so/reign-28e06c4f5a3d806d9ab7c056fd12e3ce?pvs=21">reign</a></td><td
+								class="cell-SpfY">/reɪn/</td><td class="cell-bc@N">n. （君主）在位时期，统治时期<br />v. 为王，统治；支配</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">region 地区<br />during the reign of … : … 的统治时期</td></tr><tr
+							id="27106c4f-5a3d-8007-be79-d6a0c4e9ddf7"><td class="cell-title"><a
+									href="https://www.notion.so/religious-conviction-27106c4f5a3d8007be79d6a0c4e9ddf7?pvs=21">religious
+									conviction</a></td><td class="cell-SpfY"></td><td class="cell-bc@N">宗教信仰</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-8005-97e7-f0da8d45dd6b"><td class="cell-title"><a
+									href="https://www.notion.so/remedy-28e06c4f5a3d800597e7f0da8d45dd6b?pvs=21">remedy</a></td><td
+								class="cell-SpfY">/ˈremədi/</td><td class="cell-bc@N">n. 解决方法，纠正方法；法定补偿（办法）<br />v. 补救，纠正；治疗</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">→ a medicine or treatment for a disease or injury<br />→ a way of
+								solving a problem or improving a bad situation</td></tr><tr id="27506c4f-5a3d-8031-b2e4-f9c213dfe15f"><td
+								class="cell-title"><a
+									href="https://www.notion.so/residence-27506c4f5a3d8031b2e4f9c213dfe15f?pvs=21">residence</a></td><td
+								class="cell-SpfY">/ˈrezɪdəns/</td><td class="cell-bc@N">n. 住所、住宅；居住、定居</td><td class="cell-yb`Q">resident: n.
+								居民，住户<br />reside: v. &lt;正式&gt;居住，定居 + in</td><td class="cell-ltTS">residential area n. 住宅区、居住区</td></tr><tr
+							id="27b06c4f-5a3d-8078-882b-ce0c26be28c9"><td class="cell-title"><a
+									href="https://www.notion.so/retail-27b06c4f5a3d8078882bce0c26be28c9?pvs=21">retail</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 零售</td><td class="cell-yb`Q">retailer /ˈriːteɪlə(r)/ n.
+								零售商，零售店</td><td class="cell-ltTS">retire v. 退休</td></tr><tr id="28506c4f-5a3d-80a0-b6bd-e453c98c078c"><td
+								class="cell-title"><a
+									href="https://www.notion.so/revolt-28506c4f5a3d80a0b6bde453c98c078c?pvs=21">revolt</a></td><td
+								class="cell-SpfY">/rɪˈvəʊlt/</td><td class="cell-bc@N">n./ v. （对权威、规定、法律的）反抗，违抗</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS"></td></tr><tr id="27c06c4f-5a3d-804d-9003-dba396dc7c38"><td
+								class="cell-title"><a
+									href="https://www.notion.so/rigour-27c06c4f5a3d804d9003dba396dc7c38?pvs=21">rigour</a></td><td
+								class="cell-SpfY">/ˈrɪɡə(r)/</td><td class="cell-bc@N">n. 谨慎，严谨</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">rigorous: adj. （测试、系统或程序）严密的，缜密的；（规则，制度等）严格的，苛刻的</td></tr><tr
+							id="28506c4f-5a3d-8003-aa6c-f76326ffc711"><td class="cell-title"><a
+									href="https://www.notion.so/seek-28506c4f5a3d8003aa6cf76326ffc711?pvs=21">seek</a></td><td
+								class="cell-SpfY">/siːk/</td><td class="cell-bc@N">v. 寻找</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">过去式和过去分词：sought</td></tr><tr id="28506c4f-5a3d-8098-8aad-ea295ba85a33"><td
+								class="cell-title"><a
+									href="https://www.notion.so/self-esteem-28506c4f5a3d80988aadea295ba85a33?pvs=21">self-esteem</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">自尊心</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">self-confidence 自信心</td></tr><tr id="28306c4f-5a3d-80bb-9bc2-fc58d7a289a7"><td
+								class="cell-title"><a
+									href="https://www.notion.so/seminar-28306c4f5a3d80bb9bc2fc58d7a289a7?pvs=21">seminar</a></td><td
+								class="cell-SpfY">/ˈsemɪnɑː(r)/</td><td class="cell-bc@N">n. 研讨会，培训会；（大学的）专题讨论课</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS"></td></tr><tr id="27506c4f-5a3d-808c-947a-c0394cd8992f"><td
+								class="cell-title"><a
+									href="https://www.notion.so/sheer-27506c4f5a3d808c947ac0394cd8992f?pvs=21">sheer</a></td><td
+								class="cell-SpfY">/ʃɪə(r)/</td><td class="cell-bc@N">adj. （用于强调）纯粹的，完全的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">the sheer genius: 纯粹的天才</td></tr><tr id="27106c4f-5a3d-8083-9527-e658bd0c7d02"><td
+								class="cell-title"><a
+									href="https://www.notion.so/shepherd-27106c4f5a3d80839527e658bd0c7d02?pvs=21">shepherd</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 牧羊人</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27006c4f-5a3d-8063-80e9-dc24e2f71811"><td class="cell-title"><a
+									href="https://www.notion.so/skeptical-sceptical-27006c4f5a3d806380e9dc24e2f71811?pvs=21">skeptical
+									(sceptical)</a></td><td class="cell-SpfY">/ˈskeptɪk(ə)l/</td><td class="cell-bc@N">adj. 持怀疑态度的，不相信的</td><td
+								class="cell-yb`Q">scepticism n. 怀疑态度</td><td class="cell-ltTS">suspect v. 怀疑</td></tr><tr
+							id="27006c4f-5a3d-80dd-a1dd-f9a0e1f0c295"><td class="cell-title"><a
+									href="https://www.notion.so/slum-27006c4f5a3d80dda1ddf9a0e1f0c295?pvs=21">slum</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 贫民窟，棚屋区</td><td class="cell-yb`Q">refuge n. 避难所，藏身处 </td><td
+								class="cell-ltTS">refugee camp 难民营</td></tr><tr id="28306c4f-5a3d-80c1-bdc4-ced3af27f7cf"><td
+								class="cell-title"><a
+									href="https://www.notion.so/socioeconomic-28306c4f5a3d80c1bdc4ced3af27f7cf?pvs=21">socioeconomic</a></td><td
+								class="cell-SpfY">/ˈsəʊsɪəʊˌiːkəˈnɒmɪk/</td><td class="cell-bc@N">adj. 社会经济学的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">→ involving a combination of social and economic matters</td></tr><tr
+							id="27506c4f-5a3d-8009-af70-f05b2d6d5131"><td class="cell-title"><a
+									href="https://www.notion.so/soup-27506c4f5a3d8009af70f05b2d6d5131?pvs=21">soup</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 汤</td><td class="cell-yb`Q"></td><td class="cell-ltTS">soap n.
+								肥皂</td></tr><tr id="27406c4f-5a3d-8031-8ec3-f088f55b6ba3"><td class="cell-title"><a
+									href="https://www.notion.so/speculate-27406c4f5a3d80318ec3f088f55b6ba3?pvs=21">speculate</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">v. 猜测，推测</td><td class="cell-yb`Q">speculative adj.
+								推测的，猜测的，推断的</td><td class="cell-ltTS">spectacle n. 眼镜，壮丽的景象 spectator n. 观众<br />⚠️ 注意拼写</td></tr><tr
+							id="27b06c4f-5a3d-8095-b7b3-f1e06cad7781"><td class="cell-title"><a
+									href="https://www.notion.so/sprout-27b06c4f5a3d8095b7b3f1e06cad7781?pvs=21">sprout</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">v. （植物）发芽，抽条</td><td class="cell-yb`Q">= 发芽 germinate;
+								burgeon</td><td class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-800d-8cd9-e4f1cc2337bd"><td
+								class="cell-title"><a
+									href="https://www.notion.so/stakeholder-28306c4f5a3d800d8cd9e4f1cc2337bd?pvs=21">stakeholder</a></td><td
+								class="cell-SpfY">/ˈsteɪkhəʊldə(r)/</td><td class="cell-bc@N">n. 股东，利益相关者</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28606c4f-5a3d-80df-9e11-e246cab2a8f6"><td class="cell-title"><a
+									href="https://www.notion.so/subtle-28606c4f5a3d80df9e11e246cab2a8f6?pvs=21">subtle</a></td><td
+								class="cell-SpfY">/ˈsʌt(ə)l/</td><td class="cell-bc@N">adj. 不易察觉的，微妙的；敏锐的，有洞察力的</td><td
+								class="cell-yb`Q"></td><td class="cell-ltTS">interventions should be delivered in a subtle way to maximise their
+								effectiveness 干预应该以一种微妙的方式进行以使其效果最大化</td></tr><tr id="27b06c4f-5a3d-80de-83c0-d6304a852813"><td
+								class="cell-title"><a
+									href="https://www.notion.so/taxonomy-27b06c4f5a3d80de83c0d6304a852813?pvs=21">taxonomy</a></td><td
+								class="cell-SpfY">/tækˈsɒnəmi/</td><td class="cell-bc@N">n. 分类学；分类法</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-8069-a1d5-de35e64f709c"><td class="cell-title"><a
+									href="https://www.notion.so/temporary-28306c4f5a3d8069a1d5de35e64f709c?pvs=21">temporary</a></td><td
+								class="cell-SpfY">/ˈtemprəri/</td><td class="cell-bc@N">adj. 暂时的，临时的；短期的，短暂的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">⚠️ 注意拼写<br />permanent /ˈpɜːmənənt/ adj. 永久的，永恒的</td></tr><tr
+							id="28e06c4f-5a3d-8037-9617-c7bb22a22a51"><td class="cell-title"><a
+									href="https://www.notion.so/tennis-28e06c4f5a3d80379617c7bb22a22a51?pvs=21">tennis</a></td><td
+								class="cell-SpfY">/ˈtenɪs/</td><td class="cell-bc@N">n. 网球</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">racket n. 网球拍<br />rocket n. 火箭</td></tr><tr id="27b06c4f-5a3d-801d-a8ba-db5b1c4c12fe"><td
+								class="cell-title"><a
+									href="https://www.notion.so/tourism-27b06c4f5a3d801da8badb5b1c4c12fe?pvs=21">tourism</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 旅游业，观光业</td><td class="cell-yb`Q">tourist n. 旅行者，观光客</td><td
+								class="cell-ltTS">⚠️ 注意拼写</td></tr><tr id="27506c4f-5a3d-803b-969f-e714eacf602b"><td class="cell-title"><a
+									href="https://www.notion.so/transparency-27506c4f5a3d803b969fe714eacf602b?pvs=21">transparency</a></td><td
+								class="cell-SpfY">/trænsˈpærənsi/</td><td class="cell-bc@N">n. 透明，透明性；透明度，清晰度，公开度</td><td class="cell-yb`Q">= be
+								open and honest</td><td class="cell-ltTS"></td></tr><tr id="28e06c4f-5a3d-8076-842f-c604dcae4276"><td
+								class="cell-title"><a
+									href="https://www.notion.so/tremendous-28e06c4f5a3d8076842fc604dcae4276?pvs=21">tremendous</a></td><td
+								class="cell-SpfY">/trəˈmendəs/</td><td class="cell-bc@N">adj. 巨大的，极大的；极好的，精彩的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">tremendous efforts 九牛二虎之力</td></tr><tr id="27b06c4f-5a3d-80d2-bc7f-de61f94c135c"><td
+								class="cell-title"><a href="https://www.notion.so/tusk-27b06c4f5a3d80d2bc7fde61f94c135c?pvs=21">tusk</a></td><td
+								class="cell-SpfY">/tʌsk/</td><td class="cell-bc@N">n. 长牙；尖头，尖形物</td><td class="cell-yb`Q">= ivory 象牙</td><td
+								class="cell-ltTS">task /tɑːsk/ n. （尤指困难的或必须定期做的）工作，任务</td></tr><tr id="27c06c4f-5a3d-8087-a987-eed154e57004"><td
+								class="cell-title"><a
+									href="https://www.notion.so/unfulfilled-27c06c4f5a3d8087a987eed154e57004?pvs=21">unfulfilled</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">adj. 未满足的，未实现的；壮志未酬的</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="27b06c4f-5a3d-80bf-9a81-d6a7b230e4b9"><td class="cell-title"><a
+									href="https://www.notion.so/vacancy-27b06c4f5a3d80bf9a81d6a7b230e4b9?pvs=21">vacancy</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 空缺，空职</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">vacant: adj. （地方）空着的，无人用的；（职位，工作）空缺的</td></tr><tr
+							id="27b06c4f-5a3d-80af-8b03-fcc6f569b725"><td class="cell-title"><a
+									href="https://www.notion.so/vet-27b06c4f5a3d80af8b03fcc6f569b725?pvs=21">vet</a></td><td
+								class="cell-SpfY"></td><td class="cell-bc@N">n. 兽医</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr><tr id="28306c4f-5a3d-80a1-93cd-d03decfbb0b4"><td class="cell-title"><a
+									href="https://www.notion.so/virtue-28306c4f5a3d80a193cdd03decfbb0b4?pvs=21">virtue</a></td><td
+								class="cell-SpfY">/ˈvɜːtʃuː/</td><td class="cell-bc@N">n. 高尚的道德，德行；美德，优秀品质</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS">virtual: adj. 很接近的，几乎…的</td></tr><tr id="27c06c4f-5a3d-80b9-b7a8-dcdab20ced79"><td
+								class="cell-title"><a
+									href="https://www.notion.so/waist-27c06c4f5a3d80b9b7a8dcdab20ced79?pvs=21">waist</a></td><td
+								class="cell-SpfY">/weɪst/</td><td class="cell-bc@N">n. 腰，腰围；（衣服的）腰部，腰身</td><td class="cell-yb`Q"></td><td
+								class="cell-ltTS"></td></tr></tbody></table><br /><br /></div></article><span class="sans"
+			style="font-size:14px;padding-top:2em"></span></body></html>
